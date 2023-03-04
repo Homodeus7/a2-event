@@ -1,0 +1,22 @@
+{
+  "name": "dotcom-internal-a2-6e7a4d8c6e5e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Homodeus7/a2-event.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Homodeus7/a2-event/issues"
+  },
+  "homepage": "https://github.com/Homodeus7/a2-event#readme",
+  "dependencies": {
+    "swiper": "^9.1.0"
+  }
+}
