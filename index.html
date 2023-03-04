@@ -11,12 +11,22 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#000000">
     <meta name="description" content="A2 event — агентство, которое может всё. Мы создаём события, где ваши эмоции - наша главная ценность. Контакты: +7 (995) 783-78-78 WhatsApp / Telegram">
 </head>
 
 <body>
     <!-- <section id="loader"></section> -->
     <header>
+        <a class="header__logo" href="index.html">
+            <img src="imgage/logo.png" alt="site logo">
+        </a>
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -24,13 +34,30 @@
             </label>
             <button class="za_btn" onclick="scrollToSection('.section6'); hideMenu()">Оставить заявку</button>
             <div class="menu__box">
-                <ul>
+                <ul class="menu__list-item">
                     <li class="menu__item" onclick="scrollToSection('.section3'); hideMenu()">Об агенстве</li>
                     <li class="menu__item" onclick="scrollToSection('.section5'); hideMenu()">Услуги</li>
                     <li class="menu__item" onclick="scrollToSection('.section2'); hideMenu()">Портфолио</li>
                     <li class="menu__item" onclick="scrollToSection('.section6'); hideMenu()">Контакты</li>
+                    <li class="menu__item menu__item-mobile" onclick="scrollToSection('.section6'); hideMenu()">Оставить заявку</li>
                 </ul>
-
+               
+                <div class="menu__contact">
+                    <a class="menu__contact-email"  href="mailto:info@a2event.com">info@a2event.com</a>
+                    <a class="menu__contact-phone" href="tel:+79957837878">+7 (995) 783-78-78</a>
+                    <ul class="menu__social">
+                        <li class="menu__social-item">
+                            <a class="menu__social-link" href="https://t.me/+79957837878">
+                                <img class="menu__social-img" src="image/telh.svg" alt="telegram logo" >
+                            </a>
+                        </li>
+                        <li class="menu__social-item">
+                            <a class="menu__social-link" href="https://wa.me/+79957837878">
+                                <img class="menu__social-img" src="image/whath.svg" alt="whatsapp logo" >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <span class="desktop-menu">
@@ -53,7 +80,7 @@
         <div class="swiper swiper1">
             <div class="swiper-wrapper">
                 <div class="card swiper-slide" onclick="openPopup('portfolio_popup1')">
-                    <p>Клаб-шоу Scally Milano & 163ONMYNECK</p>
+                    <p>Клаб-шоу Scally Milano and 163ONMYNECK</p>
                     <img src="image/slaid1/1.jpg" alt="Клаб-шоу Scally Milano & 163ONMYNECK">
                 </div>
                 <div class="card swiper-slide" onclick="openPopup('portfolio_popup2')">
@@ -116,7 +143,7 @@
         <div class="uslugi">
             <div class="uslugi_text">
                 <h2>Услуги под ключ</h2>
-                <p>Если вы не нашли в разделе «услуги под ключ» нужное мероприятие, опишите вашу идею или прикрепите ТЗ ниже в разделе <span onclick="scrollToSection('.section6')"> «Заявка».</span>
+                <p>Если вы не нашли в разделе «услуги под ключ» нужное мероприятие, опишите вашу идею или прикрепите ТЗ ниже в разделе <span onclick="scrollToSection('.section6')"> «Заявка».</span></p>
             </div>
             <div class="a2back"></div>
         </div>
@@ -170,7 +197,7 @@
         <div class="popup_body">
             <div class="popup_content">
                 <div class="text">
-                    <div class="popup_title">Клаб-шоу Scally Milano & 163ONMYNECK</div>
+                    <div class="popup_title">Клаб-шоу Scally Milano and 163ONMYNECK</div>
                     <hr>
                     <div class="popup_text">SCALLY MILANO - одно из самых главных открытий 2021 года. Даня является по-настоящему самобытным исполнителем. 22 января 2022 года в рамках клаб-шоу на сцене ДК Кристал собрали 1200 человек.</div>
                     <button onclick="closePopup(); scrollToSection('.section6')">Оставить заявку</button>
@@ -334,7 +361,7 @@
     <div id="popup_b2b" class="popup hidden" onclick="closePopup()">
         <div class="popup_body">
             <div class="popup2_content">
-                <div class="popup_title"> B2B (для компаний)</div>
+                <div class="popup_title">B2B (для компаний)</div>
                 <div class="popup_cards">
                     <div class="popup_card">
                         <img src="image/b2b/1.jpg" alt="">
