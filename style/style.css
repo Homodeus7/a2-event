@@ -93,54 +93,27 @@ header {
 }
 .menu__btn-desk {
     width: 175px;
-    height: 40px;
+    height: 50px;
     border-width: 1px;
     border-radius: 5px;
     background-color: #ebebeb;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
     color: #1C1C1C;
     font-family: Century Gothic;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-}
-
-.menu__btn-desk:before {
-	content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 40px;
-	background: linear-gradient(270deg, #ECECEC 0%, #FFFFFF 46.09%, #D7D7D7 120%);
-	border-radius: 5px;
-	transition: all 0.5s ease-in-out;
-    opacity: 0.2;
 }
 
 .menu__btn-desk:hover {
-    color: #1C1C1C;
+    background: #797979;
 }
-
-.menu__btn-desk:hover:before {
-	width: 100%;
-}
-
-
-/* button:hover {
-    background: #C8C8C8;
-}
-
-button:focus {
-    background: rgba(244, 244, 244, 0.5);
-    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.25);
-} */
-
 
 .za_btn {
     margin: 0;
@@ -1319,7 +1292,7 @@ video {
 
 .menu__list-desk {
     display: flex;
-    color: #fff;
+    color: #797979;
 }
 .menu__desc-item{
     font-family: Century Gothic;
@@ -1335,16 +1308,18 @@ video {
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
-    transition: background-size .2s;
+    transition: background-size .3s;
 }
 
 .menu__desc-item:hover {
     background-size: 100% 2px;
+    color: #fff;
 }
 
 .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 5px 5px;
+    margin: 10px 0;
     text-align: center;
     font-family: 'Century Gothic', sans-serif;
     font-size: 16px;
@@ -1352,16 +1327,10 @@ video {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    margin-right: 15%;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
-}
-
-.menu__item:hover {
-    text-decoration: underline;
-    transition-duration: 500ms;
 }
 
 .menu__item-mobile,
@@ -1380,6 +1349,7 @@ video {
         justify-content: center;
         align-items: center;
         height: 65vh;
+        color: #E8E8E8;
     }
     .menu__item {
         font-size: 24px;
