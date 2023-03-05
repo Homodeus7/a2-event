@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event-агентсво полного цикла</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -74,11 +74,11 @@
             </nav>
         </div>
     </header>
-    <section class="section1">
-        <img src="image/A2.svg">
-        <p>A2 event — агентство, которое может всё. <br> Мы создаём события, где ваши эмоции - наша главная ценность.</p>
+    <section class="preview">
+        <img class="preview-img" src="image/A2.svg">
+        <p class="preview-text">A2 event — агентство, которое может всё. <br> Мы создаём события, где ваши эмоции - наша главная ценность.</p>
     </section>
-    <section class="section2">
+    <!-- <section class="section2">
         <div class="swiper swiper1">
             <div class="swiper-wrapper">
                 <div class="card swiper-slide" onclick="openPopup('portfolio_popup1')">
@@ -111,20 +111,61 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="portfolio">
+        <div class="portfolio__swiper swiper">
+            <div class="portfolio__wrapper swiper-wrapper">
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup1')">
+                    <p class="portfolio__title">Клаб-шоу Scally Milano and 163ONMYNECK</p>
+                    <img class="portfolio__img" src="image/slaid1/1.jpg" alt="Клаб-шоу Scally Milano & 163ONMYNECK">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup2')">
+                    <p class="portfolio__title">Закрытая вечеринка для Native Bar</p>
+                    <img class="portfolio__img" src="image/slaid2/1.jpg" alt="Закрытая вечеринка Native Bar">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup3')">
+                    <p class="portfolio__title">Концерт LOVV66</p>
+                    <img class="portfolio__img" src="image/slaid3/1.jpg" alt="Концерт LOV66">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup4')">
+                    <p class="portfolio__title">Open air фестиваль | GONE.Fludd</p>
+                    <img class="portfolio__img" src="image/slaid4/1.jpg" alt="Open air фестиваль | GONE.Fludd">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup5')">
+                    <p class="portfolio__title">Концерт SODA LUV</p>
+                    <img class="portfolio__img" src="image/slaid5/1.jpg" alt="Концерт SODA LUV">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup4')">
+                    <p class="portfolio__title">Open air фестиваль | GONE.Fludd</p>
+                    <img class="portfolio__img" src="image/slaid4/1.jpg" alt="Open air фестиваль | GONE.Fludd">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup2')">
+                    <p class="portfolio__title">Закрытая вечеринка для Native Bar</p>
+                    <img class="portfolio__img" src="image/slaid2/1.jpg" alt="Закрытая вечеринка Native Bar">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup7')">
+                    <p class="portfolio__title">Закрытая вечеринка в ангаре Vnukovo-3</p>
+                    <img class="portfolio__img" src="image/slaid7/1.jpg" alt="Закрытая вечеринка в ангаре Vnukovo-3">
+                </div>
+                <div class="portfolio__card swiper-slide" onclick="openPopup('portfolio_popup4')">
+                    <p class="portfolio__title">Open air фестиваль | GONE.Fludd</p>
+                    <img class="portfolio__img" src="image/slaid4/1.jpg" alt="Open air фестиваль | GONE.Fludd">
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="section3" id="section3">
-        <div class="h5">
-            <h5>A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY</h5>
+    <section class="about" id="section3">
+        <div class="about__title">
             <h5>A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY &nbsp; A2 EVENT AGENCY</h5>
         </div>
-        <div class="onas">
-            <div class="onas_text">
-                <h4>О нас</h4>
-                <p>А2 &mdash; это комьюнити молодых и амбициозных ребят, которые знают и любят своё дело.</p>
-                <p>Начиная с концертов, команда А2 за два года выросла в полноценное ивент-агентство с самым широким спектром услуг в России и быстро стала одним из лидеров индустрии.</p>
+        <div class="about__wrapper">
+            <div class="about__desc">
+                <h4 class="about__desc-title">О нас</h4>
+                <p class="about__desc-text">А2 &mdash; это комьюнити молодых и амбициозных ребят, которые знают и любят своё дело.</p>
+                <p class="about__desc-text">Начиная с концертов, команда А2 за два года выросла в полноценное ивент-агентство с самым широким спектром услуг в России и быстро стала одним из лидеров индустрии.</p>
                 <!-- <q>«Если ты будешь улыбаться, буду улыбаться и я. И совсем не важно, увидишь ли ты мою улыбку, или увижу ли я твою. Ведь важнее не то, что мы видим. Куда важнее то, что мы чувствуем»</q><b>Эльчин Сафарли</b> -->
             </div>
-            <img src="image/onas.png">
+            <img class="about__desc-img" src="image/onas.png">
         </div>
     </section>
     <section class="section4">
@@ -456,9 +497,10 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/swiper.js"></script>
+
 </body>
 
 </html>

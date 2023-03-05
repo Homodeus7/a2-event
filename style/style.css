@@ -171,32 +171,27 @@ button:focus {
     text-decoration: underline;
 }
 
-.section1 {
-    box-sizing: border-box;
-    padding-top: 10%;
-    height: 100%;
+.preview {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10%;
 }
 
-.section1 img {
-    margin-bottom: -8.1%;
-    width: 45%;
-    height: 45%;
-    min-width: 300px;
+.preview-img {
+    min-width: 350px;
+}
+
+.preview-img:hover {
+    transform: scale(1.2);
     transition: transform .4s;
 }
 
-.section1 img:hover {
-    transform: scale(1.1);
-}
-
-.section1 p {
+.preview-text {
     text-align: center;
-    width: 90%;
+    font-weight: 400;
+    font-size: 16px;
     min-width: 280px;
     color: #FFF;
     line-height: 20px;
@@ -204,7 +199,7 @@ button:focus {
 
 
 @media screen and (max-width: 1024px) {
-    .section1{
+    .preview{
         height: 100vh;
     }
 }
@@ -255,48 +250,95 @@ button:focus {
     width: 314px;
 }
 
-.section3 {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    background: #EAE6E6;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+.portfolio {
+    padding-bottom: 15px;
+}
+.portfolio__swiper {
+}
+.swiper {
+}
+.portfolio__wrapper {
+}
+.swiper-wrapper {
+}
+.portfolio__card {
+    position: relative;
+    cursor: pointer;
+}
+.portfolio__card .swiper-slide {
+    width: auto !important;
+}
+.portfolio__title {
+    position: absolute;
+    max-width: 200px;
+    bottom: 15px;
+    left: 15px;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+
+}
+.portfolio__img {
+    max-height: 369px;
 }
 
-.h5 {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    text-overflow: clip;
+.about {
+    position: relative;
+    width: 100vw;
     max-width: 100%;
-    margin: 0 0 100px 0;
+    /* height: 200px; */
+    overflow-x: hidden;
+    background: #EAE6E6;
+
 }
 
-.onas {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: start;
-    margin-left: 6%;
+.about__title {
+    padding-top: 15px;
+    margin-bottom: 230px;
 }
 
-@media (max-width: 480px) {
-    .onas {
-        justify-content: center;
-        margin-left: 0;
+.about__title {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
     }
 }
 
-.onas_text {
-    width: 35%;
-    min-width: 280px;
+.about__wrapper {
+    display: flex;
+    justify-content: space-around;
 }
 
-.onas_text p {
+.about__desc-title {
+    display: inline-block;
+    font-family: Century Gothic;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    position: relative;
+}
+
+.about__desc-title::before{
+    content: '';
+    position: absolute;
+    background-image: url(../image/about-title-decor.png);
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+
+
+.about__desc-text {
     font-weight: 400;
     font-size: calc(14px + 6 *(100vw/1440));
     line-height: 25px;
@@ -306,8 +348,7 @@ button:focus {
     margin: 6% 0;
 }
 
-.onas img {
-    width: 60%;
+.about__desc-img {
     max-width: 840px;
     min-width: 280px;
     object-fit: contain;
@@ -881,14 +922,23 @@ hr {
     height: 520px;
 }
 
-.swiper2,
-.swiper2 .swiper-wrapper {
-    /* bottom: 0px !important; */
-}
-
 .swiper2 .swiper-container>.swiper-pagination-bullets,
 .swiper-pagination2 {
     bottom: 5px !important;
+}
+
+.swiper2 .swiper-pagination {
+    bottom: 0;
+  }
+.swiper2 .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+}
+
+.swiper2 .swiper-pagination-bullet-active {
+    background-color: #FFFFFF;
 }
 
 .popup2_content {
@@ -1451,25 +1501,3 @@ div#wpcf7-f5-o1 {
     width: 100%;
 }
 
-.section3 {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    /* height: 200px; */
-    overflow-x: hidden;
-}
-
-.h5 {
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 25s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}

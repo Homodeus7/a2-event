@@ -25,9 +25,7 @@ const onClickFile = (e) => {
   fileName.innerText = inputFile.name;
 };
 
-inputFile.addEventListener('change', onClickFile);
-
-
+inputFile.addEventListener("change", onClickFile);
 
 function hideMenu() {
   document.getElementById("menu__toggle").checked = false;
@@ -70,6 +68,7 @@ function closePopup(force) {
     .querySelectorAll(".popup")
     .forEach((elem) => elem.classList.add("hidden"));
 }
+
 // import Swiper, { Pagination, Navigation } from "swiper";
 // Swiper.use([Pagination, Navigation]);
 // const swiper = new Swiper(".swiper1", {
@@ -88,15 +87,3 @@ function closePopup(force) {
 //   speed: 1200,
 //   loop: true,
 // });
-
-const swiper2 = new Swiper(".swiper2", {
-  direction: "horizontal",
-  mousewheel: {
-    forceToAxis: true,
-  },
-  slidesPerView: 1,
-  clickable: true,
-  pagination: {
-    el: ".swiper-pagination2",
-  },
-});
