@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event-агентсво полного цикла</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#000000">
+
     <meta name="description" content="A2 event — агентство, которое может всё. Мы создаём события, где ваши эмоции - наша главная ценность. Контакты: +7 (995) 783-78-78 WhatsApp / Telegram">
 </head>
 
@@ -34,7 +36,7 @@
             </label>
             <button class="za_btn" onclick="scrollToSection('.section6'); hideMenu()">Оставить заявку</button>
             <div class="menu__box">
-                <ul class="menu__list-item">
+                <ul class="menu__list">
                     <li class="menu__item" onclick="scrollToSection('.section3'); hideMenu()">Об агенстве</li>
                     <li class="menu__item" onclick="scrollToSection('.section5'); hideMenu()">Услуги</li>
                     <li class="menu__item" onclick="scrollToSection('.section2'); hideMenu()">Портфолио</li>
@@ -42,25 +44,25 @@
                     <li class="menu__item menu__item-mobile" onclick="scrollToSection('.section6'); hideMenu()">Оставить заявку</li>
                 </ul>
                
-                <div class="menu__contact">
+                <div class="menu__contacts">
                     <a class="menu__contact-email"  href="mailto:info@a2event.com">info@a2event.com</a>
                     <a class="menu__contact-phone" href="tel:+79957837878">+7 (995) 783-78-78</a>
                     <ul class="menu__social">
                         <li class="menu__social-item">
-                            <a class="menu__social-link" href="https://t.me/+79957837878">
+                            <a class="menu__social-link" href="https://t.me/+79957837878" target="_blank">
                                 <img class="menu__social-img" src="image/telh.svg" alt="telegram logo" >
                             </a>
                         </li>
                         <li class="menu__social-item">
                             <a class="menu__social-link" href="https://wa.me/+79957837878">
-                                <img class="menu__social-img" src="image/whath.svg" alt="whatsapp logo" >
+                                <img class="menu__social-img" src="image/whath.svg" target="_blank" alt="whatsapp logo" >
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <span class="desktop-menu">
+        <div class="desktop-menu">
             <button onclick="scrollToSection('.section6'); hideMenu()">Оставить заявку</button>
             <nav class="menu">
                 <ul>
@@ -70,7 +72,7 @@
                     <li onclick="scrollToSection('.section6')">Контакты</li>
                 </ul>
             </nav>
-        </span>
+        </div>
     </header>
     <section class="section1">
         <img src="image/A2.svg">
@@ -163,7 +165,7 @@
                     <input type="email" placeholder="Mail *">
                 </label>
                 <label class="input-file">
-                    <input type="file" name="file">		
+                    <input type="file" name="file" accept=".png,.jpg,.jpeg,.png,.webp,.txt">		
                     <div class="file_wrap">
                         <span class="input-file-btn">Приложить файл</span>
                         <p class="file_name"></p>
