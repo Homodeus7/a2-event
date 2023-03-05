@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Homodeus7/a2-event#readme",
   "dependencies": {
+    "smoothscroll-for-websites": "^1.4.10",
     "swiper": "^9.1.0"
   }
 }

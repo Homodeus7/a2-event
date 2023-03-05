@@ -42,7 +42,7 @@ const swiper = new Swiper(".swiper", {
 const swiper2 = new Swiper(".swiper2", {
   speed: 1500,
   autoplay: {
-    delay: 2000,
+    delay: 1000,
     disableOnInteraction: true,
     stopOnLastSlide: false,
   },
