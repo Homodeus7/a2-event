@@ -83,6 +83,17 @@ header {
     z-index: 2;
 }
 
+.header__logo{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .header__logo{
+        display: block;
+        padding-right: 180px;
+        z-index: 3;
+    }
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -175,7 +186,7 @@ button:focus {
     width: 45%;
     height: 45%;
     min-width: 300px;
-    transition: transform .2s;
+    transition: transform .4s;
 }
 
 .section1 img:hover {
@@ -190,6 +201,13 @@ button:focus {
     line-height: 20px;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .section1{
+        height: 100vh;
+    }
+}
+
 .swiper1 {
     transition: transform .3s;
 }
@@ -197,20 +215,20 @@ button:focus {
 .section2 {
     margin-bottom: 1%;
     min-height: 440px;
+    padding-top: 26px;
 }
 
 .card {
     width: 350px;
     height: 440px;
-    padding-top: 26px;
-    /* box-sizing: border-box; */
-    display: grid;
+    box-sizing: border-box; 
+    display: grid; 
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(40px, auto);
+    grid-template-rows: minmax(40px, auto); 
     justify-items: center;
     align-items: center;
     align-content: space-between;
-    text-align: center;
+    text-align: center; 
     cursor: pointer;
     transition: transform .3s;
 }
@@ -1249,15 +1267,6 @@ video {
     transition-duration: .25s;
 }
 
-.header__logo{
-    display: none;
-}
-@media screen and (max-width: 1024px) {
-    .header__logo{
-        display: block;
-    }
-}
-
 
 .menu__item {
     display: block;
@@ -1282,20 +1291,24 @@ video {
         display: block;
     }
 
-    .menu__list-item {
-        padding-top: 165px;
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
     }
     .menu__item {
         font-size: 24px;
         line-height: 22px;
         font-weight: 400;
     }
-    .menu__contact{
+    .menu__contacts {
+        margin-top: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 160px;
-
+        padding-bottom: 32px;
     }
     .menu__contact-email,
     .menu__contact-phone{
