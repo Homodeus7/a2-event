@@ -118,6 +118,7 @@ button {
     border-radius: 5%/28%;
     color: black;
     font-weight: 600;
+    transition-duration: 200ms;
 }
 @media screen and (max-width: 1024px) {
     .za_btn {

@@ -12,18 +12,22 @@ function scrollToSection(selector) {
   window.scrollTo({ top: y, behavior: "smooth" });
 }
 
-const file = document.querySelector('input[name="user-file"]');
+const inputFile = document.querySelector('input[type="file"]');
 const fileName = document.querySelector(".file_name");
 
 function clearForm() {
   fileName.innerText = "";
-  file.value = "";
+  inputFile.value = "";
 }
 
-file.onchange = (e) => {
-  const [file] = e.target.files;
-  fileName.innerText = file.name;
+const onClickFile = (e) => {
+  const [inputFile] = e.target.files;
+  fileName.innerText = inputFile.name;
 };
+
+inputFile.addEventListener('change', onClickFile);
+
+
 
 function hideMenu() {
   document.getElementById("menu__toggle").checked = false;
