@@ -69,21 +69,11 @@ function closePopup(force) {
     .forEach((elem) => elem.classList.add("hidden"));
 }
 
-// import Swiper, { Pagination, Navigation } from "swiper";
-// Swiper.use([Pagination, Navigation]);
-// const swiper = new Swiper(".swiper1", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   direction: "horizontal",
-//   mousewheel: {
-//     forceToAxis: true,
-//   },
-//   slidesPerView: 4.4,
-//   spaceBetween: 14,
-//   clickable: true,
-
-//   speed: 1200,
-//   loop: true,
-// });
+const clickExit = (evt) => {
+  closePopup(evt.target.closest(".popup"));
+};
+const exit = Array.from(document.querySelectorAll(".popup__exit")).forEach(
+  (element) => {
+    element.addEventListener("click", clickExit);
+  }
+);
