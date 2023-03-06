@@ -1194,7 +1194,7 @@ hr {
     z-index: 0;
 }
 
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
     .popup_content {
         padding: 10px;
         border-radius: 10px;
@@ -1216,14 +1216,14 @@ hr {
     .popup_cards {
         justify-content: center;
     }
-}
+} */
 
-@media (min-width:768px) and (max-width: 1024px) {
+/* @media (min-width:768px) and (max-width: 1024px) {
     .swiper2 {
         width: 273px;
         height: 350px;
     }
-}
+} */
 
 @media (min-width:1024px) and (max-width: 1440px) {
     .swiper2 {
