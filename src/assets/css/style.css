@@ -53,15 +53,13 @@ p {
 
 header {
   position: fixed;
-  box-sizing: border-box;
   width: 100%;
   padding: 10px 0px;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  background: rgba(14, 14, 14, 0.5);
-  box-shadow: 0px 2px 1px rgba(255, 255, 255, 0.25);
+  background: rgba(5, 5, 5, 0.6);
+  box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8.5px);
   z-index: 2;
 }
@@ -70,10 +68,16 @@ header {
   display: none;
 }
 @media (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
   .header__logo {
     display: block;
-    padding-right: 180px;
+    width: 50px;
+    justify-self: center;
+    width: 52px;
     z-index: 3;
+    padding-left: 24px;
   }
 }
 .menu__btn-desk {
@@ -129,20 +133,17 @@ header {
 @media (max-width: 1024px) {
   .preview {
     height: 100vh;
-    padding-top: 50px;
   }
 }
 
 .preview-img {
-  min-width: 210px;
   transition-duration: 800ms;
 }
 
 @media (max-width: 1024px) {
   .preview-img {
-    max-width: 210px;
-    max-height: 210px;
-    margin-top: auto;
+    padding-top: 150px;
+    max-width: 270px;
   }
 }
 
@@ -163,9 +164,8 @@ header {
 @media (max-width: 1024px) {
   .preview-text {
     font-size: 13px;
-    padding: 0 10px;
-    margin-top: auto;
-    margin-bottom: 46px;
+    padding: 0 40px;
+    padding-top: 180px;
   }
 }
 
@@ -558,7 +558,6 @@ span {
     margin-top: 75px;
     margin-bottom: 30px;
   }
-
   .ucard-desktop {
     position: relative;
     transition: transform 0.2s;
@@ -1656,19 +1655,22 @@ video {
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 20px;
   height: 3px;
+  border-radius: 3px;
   background-color: rgba(255, 255, 255, 1);
   transition-duration: 0.25s;
 }
 
 .menu__btn > span::before {
   content: '';
+  width: 26px;
   top: -8px;
 }
 
 .menu__btn > span::after {
   content: '';
+  width: 26px;
   top: 8px;
 }
 
