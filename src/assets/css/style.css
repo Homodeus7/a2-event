@@ -183,9 +183,6 @@ header {
   }
 }
 
-.portfolio__card .swiper-slide {
-  width: auto !important;
-}
 .portfolio__title {
   position: absolute;
   max-width: 200px;
@@ -985,6 +982,10 @@ footer img {
   scrollbar-width: none;
 }
 
+.popup_popup-close {
+  display: none;
+}
+
 @media (max-width: 490px) {
   .popup_title,
   hr {
@@ -995,7 +996,6 @@ footer img {
     margin: 0;
     position: relative;
     flex-direction: column-reverse;
-    text-align: center;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -1003,19 +1003,26 @@ footer img {
   }
   .popup_text {
     display: inline-block;
+    text-align: center;
+    align-self: end;
     font-family: Century Gothic;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     text-align: center;
     max-height: min-content;
+    max-height: 100px;
+    min-width: 300px;
+  }
+  .swiper-slide {
+    text-align: center;
   }
   .popup_slide-img {
-    max-width: 490px;
-    min-height: max-content;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 450px;
   }
   .popup_popup-close {
+    display: block;
     position: absolute;
     top: 25px;
     left: 15px;
@@ -1138,6 +1145,10 @@ hr {
   width: 15px;
   background-color: rgba(255, 255, 255, 0.4);
   opacity: 1;
+}
+
+.swiper-popup2 .swiper-pagination {
+  bottom: 80px !important;
 }
 
 .swiper2 .swiper-pagination-bullet-active {
@@ -1332,6 +1343,47 @@ hr {
   width: 100%;
   padding: 15px 15px;
   z-index: 2;
+}
+
+.swiper-slide-popup2 {
+  position: relative;
+  min-height: 800px;
+}
+.popup_slide-text--popup2 {
+  position: absolute;
+  top: 15px;
+  right: 80px;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.popup_content-popup2 {
+  background: #e8e8e8;
+}
+
+.popup_btn--popup2 {
+  color: #e8e8e8;
+  background: #1d1d1d;
+}
+
+.popup_title--popup2 {
+  padding: 0 10px;
+  font-family: Century Gothic;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #1d1d1d;
+  text-align: start;
+}
+.popup_text--popup2 {
+  color: #1d1d1d;
+  padding-top: 20px;
+  padding: 10px 10px;
+  font-family: Century Gothic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
 }
 
 /* .card1 {
