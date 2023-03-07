@@ -25,9 +25,7 @@ const onClickFile = (e) => {
   fileName.innerText = inputFile.name;
 };
 
-inputFile.addEventListener('change', onClickFile);
-
-
+inputFile.addEventListener("change", onClickFile);
 
 function hideMenu() {
   document.getElementById("menu__toggle").checked = false;
@@ -70,33 +68,12 @@ function closePopup(force) {
     .querySelectorAll(".popup")
     .forEach((elem) => elem.classList.add("hidden"));
 }
-// import Swiper, { Pagination, Navigation } from "swiper";
-// Swiper.use([Pagination, Navigation]);
-// const swiper = new Swiper(".swiper1", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   direction: "horizontal",
-//   mousewheel: {
-//     forceToAxis: true,
-//   },
-//   slidesPerView: 4.4,
-//   spaceBetween: 14,
-//   clickable: true,
 
-//   speed: 1200,
-//   loop: true,
-// });
-
-const swiper2 = new Swiper(".swiper2", {
-  direction: "horizontal",
-  mousewheel: {
-    forceToAxis: true,
-  },
-  slidesPerView: 1,
-  clickable: true,
-  pagination: {
-    el: ".swiper-pagination2",
-  },
-});
+const clickExit = (evt) => {
+  closePopup(evt.target.closest(".popup"));
+};
+const exit = Array.from(document.querySelectorAll(".popup__exit")).forEach(
+  (element) => {
+    element.addEventListener("click", clickExit);
+  }
+);
