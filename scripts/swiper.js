@@ -1,8 +1,8 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   // slidesPerView: 3,
@@ -61,7 +61,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swiper2 = new Swiper(".swiper2", {
+const swiper2 = new Swiper('.swiper2', {
   speed: 1000,
   loop: true,
   autoplay: {
@@ -69,7 +69,7 @@ const swiper2 = new Swiper(".swiper2", {
     disableOnInteraction: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
