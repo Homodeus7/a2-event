@@ -546,9 +546,6 @@ span {
     margin-right: -10px;
     align-self: flex-end;
   }
-  .a2back:hover {
-    display: none;
-  }
 }
 
 @media (min-width: 769px) {
