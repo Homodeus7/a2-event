@@ -983,6 +983,9 @@ footer img {
 }
 
 @media (max-width: 490px) {
+  .popup_body {
+    align-items: flex-end;
+  }
   .popup_title,
   hr {
     display: none;
@@ -1004,16 +1007,21 @@ footer img {
     font-weight: 400;
     line-height: 17px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 25px 15px 10px 15px;
   }
 
   .swiper2{
-    max-width: 460px;
+    max-width: 490px;
   }
 
   .popup_slide-img {
     max-width: 100%;
     max-height: 100%;
+  }
+  .popup_swiper-wrapper video{
+    padding-top: 200px;
+    margin: 0 auto;
+    max-width: 350px;
   }
   .popup_popup-close {
     display: block;
@@ -1025,11 +1033,9 @@ footer img {
     cursor: pointer;
   }
 }
-
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .popup_btn {
