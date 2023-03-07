@@ -495,29 +495,39 @@
     </div>
 
     <div id="popup_b2b-mobie" class="popup hidden" onclick="closePopup()">
-        <div class="popup_body">
-            <div class="popup_content">
+        <div class="popup_body popup_body-popup2">
+            <div class="popup_content popup_content-popup2">
                 <img class="popup_popup-close popup__exit" src="image/popup-exit.svg">
-                <div class="text text--popup2">
-                    <div class="popup_title popup_title--popup2">Корпоративные мероприятия</div>
+                <div class="text--popup2">
                     <hr>
-                    <div class="popup_text popup_text--popup2"></div>
                     <button class="popup_btn popup_btn--popup2" onclick="closePopup(); scrollToSection('.section6')">Оставить заявку</button>
                 </div>
                 <div>
-                    <div class="swiper swiper2">
+                    <div class="swiper swiper2 swiper-popup2">
                         <div class="popup_swiper-wrapper swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-popup2">
                                 <img class="popup_slide-img" src="image/b2b/1.jpg" alt="b2b image">
+                                <div class="popup_slide-text-box">
+                                    <div class="popup_title popup_title--popup2">Деловые мероприятия</div>
+                                    <div class="popup_text--popup2">— это события, которые создают для клиентов и партнеров (конференции, семинары, слеты).</div>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-popup2">
                                 <img class="popup_slide-img" src="image/b2b/2.jpg" alt="b2b image">
+                                <div class="popup_slide-text-box">
+                                    <div class="popup_title--popup2">Корпоративные мероприятия</div>
+                                    <div class="popup_text--popup2">— мероприятия для сотрудников, проводятся в виде тимбилдингов, юбилеев компании и празднования других важных дат.</div>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-popup2">
                                 <img class="popup_slide-img" src="image/b2b/3.jpg" alt="b2b image">
+                                <div class="popup_slide-text-box">
+                                    <div class="popup_title--popup2">Специальные мероприятия</div>
+                                    <div class="popup_text--popup2">— события для клиентов (концерты, презентации, фестивали, благотворительные акции, рекламные туры).</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination swiper-pagination2"></div>
+                        <div class="swiper-pagination swiper-pagination-popup2"></div>
                     </div>
                 </div>
             </div>
@@ -527,7 +537,7 @@
     <div id="popup_b2c" class="popup hidden" onclick="closePopup()">
         <div class="popup_body">
             <div class="popup2_content">
-                <div class="popup_title"> B2C (для частных лиц)</div>
+                <div class="popup_title">B2C (для частных лиц)</div>
                 <div class="popup_cards">
                     <div class="popup_card">
                         <img src="image/b2c/1.jpg" alt="">
@@ -552,6 +562,36 @@
                     </div>
                 </div>
                 <button class="b2b" onclick="closePopup(); scrollToSection('.section6')">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_b2c-mobie" class="popup hidden" onclick="closePopup()">
+        <div class="popup_body popup_body-popup2">
+            <div class="popup_content popup_content-popup2">
+                <img class="popup_popup-close popup__exit" src="image/popup-exit.svg">
+                <div class="text text--popup2">
+                    <button class="popup_btn popup_btn--popup2" onclick="closePopup(); scrollToSection('.section6')">Оставить заявку</button>
+                </div>
+                <div>
+                    <div class="swiper swiper2">
+                        <div class="popup_swiper-wrapper swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-popup2">
+                                <img class="popup_slide-img" src="image/b2c/1.jpg" alt="b2b image">
+                                <p class="popup_slide-text--popup2">Свадьбы</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-popup2">
+                                <img class="popup_slide-img" src="image/b2b/2.jpg" alt="b2b image">
+                                <p class="popup_slide-text--popup2">Дни рождения</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-popup2">
+                                <img class="popup_slide-img" src="image/b2b/3.jpg" alt="b2b image">
+                                <p class="popup_slide-text--popup2">Детские праздники</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
