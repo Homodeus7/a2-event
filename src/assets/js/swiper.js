@@ -20,7 +20,7 @@ const swiper = new Swiper(".swiper", {
       speed: 1000,
     },
     375: {
-      slidesPerView: 1.75,
+      slidesPerView: 1.6,
       autoplay: false,
       speed: 1000,
     },
@@ -46,6 +46,11 @@ const swiper = new Swiper(".swiper", {
       autoplay: false,
       speed: 1000,
     },
+    700: {
+      slidesPerView: 3,
+      autoplay: false,
+      speed: 1000,
+    },
     768: {
       slidesPerView: 3.5,
       autoplay: false,
@@ -56,9 +61,8 @@ const swiper = new Swiper(".swiper", {
       autoplay: false,
       speed: 1000,
     },
-    1024: {
-      slidesPerView: 3.4,
-      autoplay: true,
+    1025: {
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 3.6,
