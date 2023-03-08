@@ -189,7 +189,7 @@ header {
 
 @media (max-width: 1024px) {
   .portfolio__card .bg{
-    width: 90%;
+    width: 99%;
     height: 99%;
   }
   .portfolio__title {
@@ -387,7 +387,7 @@ header {
 @media (max-width: 1024px) {
   .about__desc-text {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 20px;
     text-align: justify;
   }
 }
@@ -522,6 +522,7 @@ header {
   .uslugi_desc {
     font-size: 15px;
     margin-top: -15px;
+    line-height: 20px;
   }
 }
 
