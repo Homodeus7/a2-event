@@ -76,8 +76,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 const swiper2 = new Swiper(".swiper2", {
-  type: "bullets",
-  speed: 1000,
+  speed: 1500,
   autoplay: {
     delay: 1000,
     disableOnInteraction: true,
@@ -89,20 +88,20 @@ const swiper2 = new Swiper(".swiper2", {
   },
   breakpoints: {
     320: {
-      autoplay: false,
+      autoplay: 100000000,
     },
     375: {
-      autoplay: false,
+      autoplay: 100000000,
     },
     390: {
-      autoplay: false,
+      autoplay: 100000000,
     },
     430: {
-      autoplay: false,
+      autoplay: 100000000,
     },
 
     480: {
-      autoplay: false,
+      autoplay: 100000000,
     },
   },
 });
