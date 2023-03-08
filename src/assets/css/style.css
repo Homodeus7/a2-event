@@ -175,7 +175,7 @@ header {
   padding-bottom: 5px;
 }
 
-.portfolio__title:hover {
+.portfolio__card:hover .portfolio__title {
   background-size: 100% 2px;
   color: #fff;
 }
