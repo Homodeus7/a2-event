@@ -1053,7 +1053,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination swiper-pagination-popup2"></div>
+              <div class="swiper-pagination swiper-pagination2"></div>
             </div>
           </div>
         </div>
@@ -1113,9 +1113,9 @@
             </button>
           </div>
           <div>
-            <div class="swiper swiper2">
+            <div class="swiper swiper2 swiper-popup2">
               <div class="popup_swiper-wrapper swiper-wrapper">
-                <div class="swiper-slide swiper-slide-popup2">
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
                   <img
                     class="popup_slide-img"
                     src="assets/images/b2c/1.jpg"
@@ -1123,7 +1123,7 @@
                   />
                   <p class="popup_slide-text--popup2">Свадьбы</p>
                 </div>
-                <div class="swiper-slide swiper-slide-popup2">
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
                   <img
                     class="popup_slide-img"
                     src="assets/images/b2b/2.jpg"
@@ -1131,7 +1131,7 @@
                   />
                   <p class="popup_slide-text--popup2">Дни рождения</p>
                 </div>
-                <div class="swiper-slide swiper-slide-popup2">
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
                   <img
                     class="popup_slide-img"
                     src="assets/images/b2b/3.jpg"
@@ -1146,6 +1146,7 @@
         </div>
       </div>
     </div>
+
     <div id="popup_b2c2" class="popup hidden" onclick="closePopup()">
       <div class="popup_body">
         <div class="popup2_content">
@@ -1182,7 +1183,55 @@
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/imask"></script>
+    <div id="popup_b2c2-mobile" class="popup hidden" onclick="closePopup()">
+      <div class="popup_body popup_body-popup2">
+        <div class="popup_content popup_content-popup2">
+          <img
+            class="popup_popup-close popup__exit"
+            src="assets/images/popup-exit.svg"
+          />
+          <div class="text text--popup2">
+            <button
+              class="popup_btn popup_btn--popup2"
+              onclick="closePopup(); scrollToSection('.section6')"
+            >
+              Оставить заявку
+            </button>
+          </div>
+          <div>
+            <div class="swiper swiper2 swiper-popup2">
+              <div class="popup_swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
+                  <img
+                    class="popup_slide-img"
+                    src="assets/images/b2g/1.jpg"
+                    alt="b2b image"
+                  />
+                  <p class="popup_slide-text--popup2">Свадьбы</p>
+                </div>
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
+                  <img
+                    class="popup_slide-img"
+                    src="assets/images/b2g/2.jpg"
+                    alt="b2b image"
+                  />
+                  <p class="popup_slide-text--popup2">Дни рождения</p>
+                </div>
+                <div class="swiper-slide swiper-slide-popup2 swiper-slide-fullscreen">
+                  <img
+                    class="popup_slide-img"
+                    src="assets/images/b2g/3.jpg"
+                    alt="b2b image"
+                  />
+                  <p class="popup_slide-text--popup2">Детские праздники</p>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/swiper.js"></script>
   </body>
