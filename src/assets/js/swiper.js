@@ -76,18 +76,16 @@ const swiper = new Swiper(".swiper", {
 });
 
 const swiper2 = new Swiper(".swiper2", {
+  type: "bullets",
   speed: 1000,
   autoplay: {
     delay: 1000,
     disableOnInteraction: true,
   },
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     320: {

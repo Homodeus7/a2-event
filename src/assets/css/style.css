@@ -1113,7 +1113,7 @@ input[type='submit']:focus {
   .popup_popup-close {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 15px;
     width: 50px;
     z-index: 100;
@@ -1282,8 +1282,11 @@ input[type='submit']:focus {
   opacity: 1;
 }
 
-.swiper-popup2 .swiper-pagination {
-  bottom: 80px !important;
+.swiper2 .swiper-pagination {
+  bottom: 230px !important;
+}
+.swiper2 .swiper-pagination-bottom {
+  bottom: 100px !important;
 }
 
 .swiper2 .swiper-pagination-bullet-active {
@@ -1298,7 +1301,6 @@ input[type='submit']:focus {
   width: 70%;
   height: 75%;
   min-width: 300px;
-  /* min-height: fit-content; */
   text-align: left;
   display: flex;
   flex-flow: row wrap;
@@ -1335,24 +1337,25 @@ input[type='submit']:focus {
   z-index: 0;
 }
 
-@media (max-width: 780px) {
-  /* .swiper2 {
+/* @media (max-width: 780px) {
+  .swiper2 {
     width: 280px;
     height: 370px;
-  } */
+  }
   .popup2_content {
     padding: 10px;
     border-radius: 10px;
     max-height: 450px;
     justify-content: center;
   }
-}
+} */
 
+/* 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* .swiper2 {
+  .swiper2 {
     width: 273px;
     height: 350px;
-  } */
+  }
   .popup_content {
     padding: 10px;
     border-radius: 10px;
@@ -1361,9 +1364,10 @@ input[type='submit']:focus {
   .popup_cards {
     justify-content: center;
   }
-}
+} */
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+
+/* @media (min-width: 1024px) and (max-width: 1440px) {
   .swiper2 {
     width: 320px;
     height: 400px;
@@ -1379,9 +1383,9 @@ input[type='submit']:focus {
     padding: 20px 20px 20px 40px;
     width: max-content;
   }
-}
+} */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   .popup_content {
     max-height: 699px;
   }
@@ -1402,7 +1406,7 @@ input[type='submit']:focus {
     height: 603px;
     padding: 96px 0;
   }
-}
+} */
 
 @media (max-width: 780px) {
   .desktop-menu {
@@ -1410,17 +1414,8 @@ input[type='submit']:focus {
   }
 }
 
-.popup2_content::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.popup2_content .popup_card {
-  cursor: pointer;
-}
-
-.popup_cards {
-  /* height: 100%; */
+/* .popup_cards {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -1474,7 +1469,7 @@ input[type='submit']:focus {
   bottom: 0px;
   width: 100%;
   z-index: 2;
-}
+} */
 
 .swiper-popup2{
   width: 100%;
@@ -1613,7 +1608,7 @@ input[type='submit']:focus {
     background-repeat: no-repeat;
 } */
 
-.b2b {
+/* .b2b {
   justify-self: flex-end;
   margin: 0;
   font-style: normal;
@@ -1633,20 +1628,20 @@ input[type='submit']:focus {
 
 .b2b:focus {
   background: rgba(14, 14, 14, 0.5);
-}
+} */
 
-#loader {
+/* #loader {
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-image: url('../images/loader/a2.gif');
   border: 0px;
-}
+} */
 
 .desktop-menu {
   display: flex;
@@ -1657,11 +1652,11 @@ input[type='submit']:focus {
   align-items: center;
 }
 
-video {
+/* video {
   width: 100%;
   height: auto;
   max-width: 450px;
-}
+} */
 
 /* @media (max-width: 780px) {
     .popup_content {
