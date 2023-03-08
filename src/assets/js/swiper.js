@@ -77,7 +77,6 @@ const swiper = new Swiper(".swiper", {
 
 const swiper2 = new Swiper(".swiper2", {
   speed: 1000,
-  loop: true,
   autoplay: {
     delay: 1000,
     disableOnInteraction: true,
@@ -89,6 +88,24 @@ const swiper2 = new Swiper(".swiper2", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      autoplay: false,
+    },
+    375: {
+      autoplay: false,
+    },
+    390: {
+      autoplay: false,
+    },
+    430: {
+      autoplay: false,
+    },
+
+    480: {
+      autoplay: false,
+    },
   },
 });
 
