@@ -4,7 +4,6 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // slidesPerView: 3,
   speed: 2500,
   autoplay: {
     delay: 1000,
@@ -87,11 +86,16 @@ const swiper2 = new Swiper(".swiper2", {
     el: ".swiper-pagination",
     clickable: true,
   },
-
-  breakpoints: {
-    320: {
-      autoplay: false,
-      loop: true,
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
+
+// const swiper2 = new Swiper(".swiper2", {
+//   effect: "fade",
+//   pagination: {
+//     el: ".swiper-pagination2",
+//     clickable: true,
+//   },
+// });
