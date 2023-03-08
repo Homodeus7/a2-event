@@ -1062,6 +1062,7 @@ input[type='submit']:focus {
   padding: 37px 37px 37px 65px;
   border-radius: 70px 1px 1px 25px;
   scrollbar-width: none;
+  overflow: hidden;
 }
 
 .popup_popup-close {
@@ -1486,7 +1487,7 @@ input[type='submit']:focus {
 
 .popup_slide-text--popup2 {
   position: absolute;
-  top: 150px;
+  top: 60px;
   right: 60px;
   font-family: Century Gothic;
   font-size: 20px;
