@@ -189,7 +189,7 @@ header {
 
 @media (max-width: 1024px) {
   .portfolio__card .bg{
-    width: 89%;
+    width: 90%;
     height: 99%;
   }
   .portfolio__title {
@@ -1293,7 +1293,7 @@ input[type='submit']:focus {
   background-color: #ffffff;
 }
 
-.popup2_content {
+/* .popup2_content {
   box-sizing: border-box;
   background: #e8e8e8;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
@@ -1313,7 +1313,7 @@ input[type='submit']:focus {
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: relative;
-}
+} */
 
 .popup2_content::before {
   content: '';
@@ -1498,6 +1498,13 @@ input[type='submit']:focus {
 .popup_btn--popup2 {
   color: #e8e8e8;
   background: #1d1d1d;
+}
+.popup_btn--absolute {
+  position: absolute;
+  color:  #1d1d1d;
+  background: #e8e8e8;
+  bottom: 10px;
+  z-index: 10;
 }
 
 .popup_btn--popup2:hover {
