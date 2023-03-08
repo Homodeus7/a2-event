@@ -7,23 +7,6 @@ body {
   font-family: 'Century Gothic';
 }
 
-h4:hover {
-  color: #e8e8e8;
-  text-shadow: -1px -1px 0 #1c1c1c, 1px -1px 0 #1c1c1c, -1px 1px 0 #1c1c1c,
-    1px 1px 0 #1c1c1c;
-  transition-duration: 200ms;
-}
-
-h4 {
-  transition-duration: 200ms;
-}
-
-p {
-  font-weight: 400;
-  font-size: calc(14px + 2 * (100vw / 1440));
-  color: #fff;
-}
-
 header {
   position: fixed;
   width: 100%;
@@ -46,11 +29,13 @@ header {
   }
   .header__logo {
     display: block;
-    width: 50px;
     justify-self: center;
     width: 52px;
     z-index: 3;
     padding-left: 24px;
+  }
+  .header__logo-img{
+    width: 50px;
   }
 }
 .menu__btn-desk {
@@ -116,7 +101,6 @@ header {
 @media (max-width: 1024px) {
   .preview-img {
     padding-top: 150px;
-    max-width: 270px;
   }
 }
 
@@ -136,8 +120,8 @@ header {
 
 @media (max-width: 1024px) {
   .preview-text {
-    font-size: 13px;
-    padding: 0 40px;
+    font-size: 15px;
+    padding: 0 25px;
     padding-top: 100px;
   }
 }
@@ -150,21 +134,50 @@ header {
   position: relative;
   cursor: pointer;
 }
+
 @media (max-width: 374px) {
   .portfolio__card {
     padding-left: 55px;
   }
 }
 
+
+    .portfolio__card .bg{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    }
+    .portfolio__card:hover .bg{
+    background: none;
+    }
+
+
 .portfolio__title {
   position: absolute;
   max-width: 200px;
   bottom: 15px;
   left: 15px;
-  font-family: Century Gothic;
+  color: #E8E8E8;
+  font-family: 'Century Gothic';
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s;
+  z-index: 10;
+  padding-bottom: 5px;
+}
+
+.portfolio__title:hover {
+  background-size: 100% 2px;
+  color: #fff;
 }
 
 @media (max-width: 374px) {
@@ -213,6 +226,7 @@ header {
 @media (max-width: 1024px) {
   .portfolio__img {
     max-height: 241px;
+
   }
 }
 
@@ -230,32 +244,29 @@ header {
   }
 }
 
-h5 {
+.about__title {
   width: min-content;
   font-style: italic;
   font-weight: 700;
   font-size: 32px;
   color: #1c1c1c;
   white-space: nowrap;
-  margin: 0 1%;
-}
-
-@media (max-width: 1024px) {
-  h5 {
-    font-size: 22px;
-  }
-}
-
-.about__title {
+  font-family: 'Century Gothic';
   padding-top: 15px;
   margin-bottom: 230px;
 }
 
 @media (max-width: 1024px) {
   .about__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__title {
     font-size: 15px;
     padding-top: 75px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 }
 
@@ -314,7 +325,7 @@ h5 {
 }
 @media (max-width: 1024px) {
   .about__desc {
-    padding: 0 20px 0 16px;
+    padding: 0 20px 42px 16px;
   }
 }
 .about__desc-title {
@@ -330,9 +341,17 @@ h5 {
 @media (max-width: 1024px) {
   .about__desc-title {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
+
+
+.about__desc-title:hover {
+  color: #e8e8e8;
+  text-shadow: -1px -1px 0 #1c1c1c, 1px -1px 0 #1c1c1c, -1px 1px 0 #1c1c1c,
+    1px 1px 0 #1c1c1c;
+}
+
 
 .about__desc-title::after {
   content: '';
@@ -366,7 +385,7 @@ h5 {
   .about__desc-text {
     font-size: 15px;
     line-height: 16px;
-    margin-bottom: 42px;
+    text-align: justify;
   }
 }
 
@@ -390,22 +409,22 @@ h5 {
   }
 }
 
-h3:hover {
-  color: #0e0e0e;
-  text-shadow: -1px -1px 0 #eae6e6, 1px -1px 0 #eae6e6, -1px 1px 0 #eae6e6,
-    1px 1px 0 #eae6e6;
-}
-
-h3 {
+.partners__title {
   font-weight: 700;
   font-size: 40px;
   color: #eae6e6;
 }
 
 @media (max-width: 1024px) {
-  h3 {
-    font-size: 15px;
+  .partners__title {
+    font-size: 18px;
   }
+}
+
+.partners__title:hover {
+  color: #0e0e0e;
+  text-shadow: -1px -1px 0 #eae6e6, 1px -1px 0 #eae6e6, -1px 1px 0 #eae6e6,
+    1px 1px 0 #eae6e6;
 }
 
 
@@ -468,7 +487,7 @@ h3 {
 @media (max-width: 1024px) {
   .uslugi_text {
     width: 100%;
-    padding: 0 16px 30px 16px;
+    padding: 0 36px 30px 16px;
   }
 }
 
@@ -484,7 +503,6 @@ h3 {
   color: #e8e8e8;
   text-shadow: -1px -1px 0 #1c1c1c, 1px -1px 0 #1c1c1c, -1px 1px 0 #1c1c1c,
     1px 1px 0 #1c1c1c;
-  transition-duration: 400ms;
 }
 
 .uslugi_desc {
@@ -495,7 +513,7 @@ h3 {
   .uslugi_title {
     margin-top: -80px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .uslugi_desc {
     font-size: 15px;
@@ -603,7 +621,6 @@ span {
   }
 
   .ucard-img {
-    min-width: 210px;
     cursor: pointer;
   }
 
@@ -640,21 +657,22 @@ span {
   padding-top: 100px;
 }
 
-h1 {
+.main-form__title {
+  font-family: 'Century Gothic';
   color: #fff;
   font-weight: 700;
   font-size: 40px;
 }
 
-h1:hover {
+.main-form__title:hover {
   color: #0e0e0e;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
     1px 1px 0 #fff;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 15px;
+@media (max-width: 1024px) {
+  .main-form__title {
+    font-size: 18px;
     padding-bottom: 10px;
   }
 }
@@ -931,21 +949,29 @@ input[type='submit']:focus {
   }
 }
 
-footer {
-  box-sizing: border-box;
-  display: flex;
+.footer {
   background: #131313;
-  height: 4%;
-  padding: 1% 3%;
+  height: 68px;
+}
+.footer__wrapper {
+  padding: 0 42px;
+}
+.footer__logo-img{
+  max-width: 82px;
+  padding-top: 16px;
 }
 
-footer img {
-  width: 6%;
-  height: 80%;
-}
 @media (max-width: 768px) {
-  footer img {
-    width: 48px;
+  .footer {
+    background: #131313;
+    height: 40px;
+  }
+  .footer__wrapper {
+    padding: 0 32px;
+  }
+  .footer__logo-img{
+    max-width: 42px;
+    padding-top: 11px;
   }
 }
 
@@ -1693,10 +1719,10 @@ video {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 6px;
+  top: 14px;
   right: 20px;
-  width: 26px;
-  height: 26px;
+  width: 29px;
+  height: 29px;
   cursor: pointer;
   z-index: 1;
 }
@@ -1718,22 +1744,22 @@ video {
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 20px;
-  height: 3px;
-  border-radius: 3px;
+  width: 22px;
+  height: 4px;
+  border-radius: 4px;
   background-color: rgba(255, 255, 255, 1);
   transition-duration: 0.25s;
 }
 
 .menu__btn > span::before {
   content: '';
-  width: 26px;
+  width: 28px;
   top: -8px;
 }
 
 .menu__btn > span::after {
   content: '';
-  width: 26px;
+  width: 28px;
   top: 8px;
 }
 
