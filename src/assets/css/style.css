@@ -40,7 +40,7 @@ header {
 }
 .menu__btn-desk {
   width: 175px;
-  height: 50px;
+  height: 40px;
   border-width: 1px;
   border-radius: 5px;
   background-color: #ebebeb;
@@ -575,6 +575,7 @@ header {
     position: relative;
     transition: transform 0.2s;
     transition-duration: 200ms;
+    cursor: pointer;
   }
   .ucard-desktop-text {
     position: absolute;
@@ -647,9 +648,6 @@ header {
 
   .ucard {
     position: relative;
-  }
-
-  .ucard-img {
     cursor: pointer;
   }
 
@@ -1130,6 +1128,10 @@ input[type='submit']:focus {
   overflow: hidden;
 }
 
+.popup_swiper-wrapper video{
+  max-width: 513px;
+}
+
 @media (max-width: 490px) {
   .popup_body {
     align-items: flex-end;
@@ -1184,8 +1186,8 @@ input[type='submit']:focus {
     cursor: pointer;
   }
   .popup_btn {
-    max-width: 282px;
-    max-height: 40px;
+    min-width: 282px;
+    max-height: 29px;
     border-radius: 17px;
     margin: 15px 0;
     font-size: 15px;
@@ -1200,7 +1202,7 @@ input[type='submit']:focus {
 }
 
 .swiper2 .swiper-pagination {
-  bottom: 45px !important;
+  bottom: 75px !important;
   left: 230px !important;
 }
 
