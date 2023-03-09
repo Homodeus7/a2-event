@@ -537,16 +537,19 @@
       <div class="zayavka">
         <h1 class="main-form__title">Заявка</h1>
         <form class="main-form_inputs" enctype="multipart/form-data" method="post">
-          <input class="main-form_item-name" type="text" placeholder="Ваше ФИО *" name="name" />
+
+          <div class="conic"><input class="main-form_item-name" type="text" placeholder="Ваше ФИО *" name="name" /></div>
           <div class="phone_mail">
-            <input
-              class="main-form_item"
-              id="phone"
-              type="phone"
-              name="phone"
-              placeholder="+7 (999)-999-99-99 *"
-            />
-            <input class="main-form_item" type="email" placeholder="Mail *" />
+            <div class="conic conic--small">
+              <input
+                class="main-form_item"
+                id="phone"
+                type="phone"
+                name="phone"
+                placeholder="+7 (999)-999-99-99 *"
+              />
+            </div>
+            <div class="conic conic--small"><input class="main-form_item" type="email" placeholder="Mail *" /></div>
           </div>
           <div class="main-form_input-file">
             <input id="input__file" class="input__file" type="file" name="file" multiple/>
@@ -555,10 +558,10 @@
               <span class="input-file-text">ТЗ / Ваши пожелания</span>
             </label>
           </div>
-          <textarea class="main-form_area"
+          <div class="conic conic--area"><textarea class="main-form_area"
             placeholder="Опишите ваши пожелания"
             name="question"
-          ></textarea>
+          ></textarea></div>
           <button
             class="form__button"
             type="submit"

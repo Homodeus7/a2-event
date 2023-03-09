@@ -7,9 +7,10 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  speed: 1500,
   autoplay: {
     delay: 2000,
-    speed: 1500,
+    speed: 2000,
     disableOnInteraction: false,
     stopOnLastSlide: false,
   },
@@ -82,40 +83,15 @@ const swiper2 = new Swiper(".swiper2", {
   mousewheel: {
     forceToAxis: true,
   },
-  speed: 100,
+  speed: 800,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: true,
+    stopOnLastSlide: false,
   },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  breakpoints: {
-    320: {
-      autoplay: 100000000,
-    },
-    375: {
-      autoplay: 100000000,
-    },
-    390: {
-      autoplay: 100000000,
-    },
-    430: {
-      autoplay: 100000000,
-    },
-
-    480: {
-      autoplay: 100000000,
-    },
-  },
 });
-
-// const swiper2 = new Swiper(".swiper2", {
-//   effect: "fade",
-//   pagination: {
-//     el: ".swiper-pagination2",
-//     clickable: true,
-//   },
-// });
