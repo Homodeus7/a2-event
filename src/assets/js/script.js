@@ -20,21 +20,9 @@ function clearForm() {
   inputFile.value = "";
 }
 
-const onClickFile = (e) => {
-  const [inputFile] = e.target.files;
-  fileName.innerText = inputFile.name;
-};
-
-inputFile.addEventListener("change", onClickFile);
-
 function hideMenu() {
   document.getElementById("menu__toggle").checked = false;
 }
-
-const element = document.getElementById("phone");
-const maskOptions = {
-  mask: "+{7} (000) 000-00-00",
-};
 
 // setTimeout(() => {
 //     document.getElementById('loader').remove()
@@ -76,3 +64,18 @@ const exit = Array.from(document.querySelectorAll(".popup__exit")).forEach(
     element.addEventListener("click", clickExit);
   }
 );
+
+let inputs = document.querySelectorAll(".input__file");
+Array.prototype.forEach.call(inputs, function (input) {
+  let label = input.nextElementSibling,
+    labelVal = label.querySelector(".input-file-btn").innerText;
+  input.addEventListener("change", function (e) {
+    let countFiles = "";
+    if (this.files && this.files.length >= 1) countFiles = this.files.length;
+
+    if (countFiles)
+      label.querySelector(".input-file-btn").innerText =
+        "Выбрано файлов: " + countFiles;
+    else label.querySelector(".input-file-btn").innerText = labelVal;
+  });
+});
