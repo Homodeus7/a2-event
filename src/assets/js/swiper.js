@@ -7,9 +7,9 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  speed: 2500,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
+    speed: 1500,
     disableOnInteraction: false,
     stopOnLastSlide: false,
   },
@@ -19,29 +19,29 @@ const swiper = new Swiper(".swiper", {
     320: {
       slidesPerView: 1.5,
       autoplay: false,
-      speed: 1000,
+      speed: 100,
     },
     375: {
       slidesPerView: 1.6,
       autoplay: false,
-      speed: 1000,
+      speed: 500,
     },
     390: {
       slidesPerView: 1.85,
       autoplay: false,
-      speed: 1000,
+      speed: 500,
     },
 
     430: {
       slidesPerView: 2,
       autoplay: false,
-      speed: 1000,
+      speed: 500,
     },
 
     480: {
       slidesPerView: 2.2,
       autoplay: false,
-      speed: 1000,
+      speed: 500,
     },
     576: {
       slidesPerView: 2.7,
@@ -82,7 +82,7 @@ const swiper2 = new Swiper(".swiper2", {
   mousewheel: {
     forceToAxis: true,
   },
-  speed: 1500,
+  speed: 100,
   autoplay: {
     delay: 1000,
     disableOnInteraction: true,

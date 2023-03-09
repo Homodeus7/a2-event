@@ -42,7 +42,7 @@ header {
   width: 175px;
   height: 40px;
   border-width: 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ebebeb;
   background-position: center center;
   border-color: transparent;
@@ -708,6 +708,12 @@ header {
   padding-top: 100px;
 }
 
+@media (max-width: 490px) {
+  .zayavka  {
+    padding-top: 80px;
+  }
+}
+
 .main-form__title {
   color: #fff;
   font-weight: 700;
@@ -731,6 +737,12 @@ header {
   width: 476px;
 }
 
+@media (max-width: 490px) {
+  .main-form_inputs{
+    width: 258px;
+  }
+}
+
 .phone_mail {
   display: flex;
   justify-content: space-between;
@@ -746,6 +758,16 @@ header {
   font-weight: 400;
   font-size: 16px;
 }
+
+@media (max-width: 490px) {
+  .main-form_item{
+    min-width: 100px;
+    min-height: 30px;
+    background-color: #060606;
+    padding: 0 10px;
+  }
+}
+
 .main-form_item:first-child{
   margin-right: 10px;
 }
@@ -760,6 +782,14 @@ header {
   border-color: rgba(175, 175, 175, 0.6);
   margin-bottom: 22px;
 }
+@media (max-width: 490px) {
+  .main-form_item-name {
+    min-width: 234px;
+    background-color: #060606;
+    padding: 0 10px;
+    min-height: 30px;
+  }
+}
 .main-form_area {
   padding: 16px 0 0 23px;
   min-width: 450px;
@@ -770,8 +800,16 @@ header {
   color: #fff;
   background-color: #3C3C3C;
   border-color: rgba(175, 175, 175, 0.6);
+  resize: none;
 }
-
+@media (max-width: 490px) {
+  .main-form_area {
+    min-width: 234px;
+    background-color: #060606;
+    padding: 10px 10px;
+    min-height: 92px;
+  }
+}
 .main-form_item-name::placeholder,
 .main-form_item::placeholder,
 .main-form_area::placeholder{
@@ -786,9 +824,6 @@ header {
   .main-form_area::placeholder{
     font-size: 11px;
   }
-  input {
-    height: 30px;
-  }
 }
 
 .form__button {
@@ -802,7 +837,6 @@ header {
   background: #f4f4f4;
   border: none;
   cursor: pointer;
-  -webkit-appearance: none;
   color: #1c1c1c;
 }
 
@@ -817,7 +851,10 @@ header {
 
 @media (max-width: 490px) {
   .form__button {
-    min-height: 40px;
+    font-size: 11px;
+    min-height: 27px;
+    min-width: 258px;
+    padding: 0;
   }
 }
 
@@ -843,7 +880,14 @@ header {
   color: #060606;
   background: #f4f4f4;
   transition: background-color 0.2s;
-
+}
+@media (max-width: 490px) {
+  .input-file-btn {
+    font-size: 11px;
+    height: 27px;
+    min-width: 116px;
+    padding: 7px 5px;
+  }
 }
 .input-file-text {
 	display: inline-block;
@@ -851,6 +895,11 @@ header {
   text-align: center;
   padding-left: 20px;
   font-size: 20px;
+}
+@media (max-width: 490px) {
+  .input-file-text {
+    font-size: 11px;
+  }
 }
 .input__file {
   opacity: 0;
@@ -886,19 +935,11 @@ header {
   grid-template-areas: '. soc mail';
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .seti {
     grid-template-columns: 1fr;
     grid-template-areas: ' soc ' ' mail';
     row-gap: 5px;
-  }
-  input[type='email'],
-  input[type='tel'],
-  input[type='text'] {
-    padding: 16px 7px;
-  }
-  .input-file-btn{
-    font-size: 11px;
   }
 }
 
@@ -914,6 +955,15 @@ header {
 .soc a {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 490px) {
+  .soc {
+    width: 55px;
+  }
+  .soc a {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .soc_a,
@@ -950,7 +1000,6 @@ header {
 .mail {
   grid-area: mail;
   min-width: 185px;
-  /* justify-self: end; */
   text-align: right;
   margin-right: 30px;
 }
@@ -1030,6 +1079,7 @@ header {
 }
 
 .popup_content {
+  position: fixed;
   max-width: 1059px;
   max-height: 677px;
   display: flex;
@@ -1081,7 +1131,7 @@ header {
   margin-top: 40px;
   width: 238px;
   height: 59px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: #ebebeb;
   border: none;
   cursor: pointer;
@@ -1101,6 +1151,10 @@ header {
   min-width: 0;
   max-width: 513px;
   overflow: hidden;
+}
+
+.popup_swiper-wrapper{
+  max-width: 513px;
 }
 
 .popup_swiper-wrapper video{
@@ -1177,7 +1231,7 @@ header {
 }
 
 .swiper2 .swiper-pagination {
-  bottom: 75px !important;
+  bottom: 120px !important;
   left: 230px !important;
 }
 
@@ -1237,9 +1291,15 @@ header {
 .popup_cards{
   display: flex;
 }
+
 .popup_card{
   position: relative;
   z-index: 1;
+  transition: transform 0.2s;
+  transition-duration: 200ms;
+}
+.popup_card:hover {
+  transform: scale(1.01);
 }
 .popup_services-img {
   max-width: 100%;
