@@ -57,3 +57,13 @@ table {
     outline: 0;
     outline-offset: 0;
 }
+textarea,
+input,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="email"],
+input[type="phone"]  {
+     -webkit-appearance: none;
+     border-radius: 0;
+}

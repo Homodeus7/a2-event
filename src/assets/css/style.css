@@ -1635,7 +1635,7 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 14px;
+  top: 8px;
   right: 20px;
   width: 29px;
   height: 29px;
@@ -1649,7 +1649,7 @@ header {
   }
 }
 
-@media (min-width: 781px) {
+@media (min-width: 1024px) {
   .hamburger-menu {
     display: none;
   }
@@ -1930,7 +1930,7 @@ div#wpcf7-f5-o1 {
 .conic {
   min-width: max-content;
   height: min-content;
-  padding: 3px;
+  padding: 2px;
   position: relative;
   border-radius: 1px;
   overflow: hidden;
@@ -1954,7 +1954,7 @@ conic--small{
   background-position: 0 0;
   background-image: conic-gradient(transparent, rgb(238, 237, 237), transparent 30%);
   -webkit-animation: rotate 6s linear infinite;
-  animation: rotate 3s linear infinite;
+  animation: rotate 6s linear infinite;
 }
 .conic:hover::after {
   content: "";
@@ -1962,10 +1962,21 @@ conic--small{
   z-index: -1;
   left: 2px;
   top: 2px;
-  width: calc(100% - 7px);
-  height: calc(100% - 7px);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
   background: #000;
   border-radius: 2px;
+}
+
+@media (max-width: 490px) {
+  .conic {
+    padding: 0;
+  }
+  .conic:hover::after {
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    border-radius: 1px;
+  }
 }
 
 @-webkit-keyframes opacityChange {
