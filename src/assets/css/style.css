@@ -799,6 +799,7 @@ header {
 
 @media (max-width: 490px) {
   .main-form_area {
+    min-width: 98%;
     background-color: #060606;
     padding: 10px 10px;
     min-height: 92px;
@@ -1409,84 +1410,6 @@ header {
   min-height: 100vh;
 }
 
-/* .card1 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('.');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-.card2 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2b/2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2b/3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card4 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2c/1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card5 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2c/2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card6 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2c/3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card7 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2g/1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card8 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2g/2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card9 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/b2g/3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* .card10 {
-    background: url('../image/b2b/komp.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.card11 {
-    background: url('../image/b2c/chast.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.card10 {
-    background: url('../image/b2g/gos.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 /* #loader {
   position: fixed;
   z-index: 999;
@@ -1508,105 +1431,6 @@ header {
   max-width: 1200px;
   align-items: center;
 }
-
-/* video {
-  width: 100%;
-  height: auto;
-  max-width: 450px;
-} */
-
-/* @media (max-width: 780px) {
-    .popup_content {
-        padding: 10px;
-        border-radius: 10px;
-        max-height: 450px;
-    }
-    .rabotali {
-        width: 60%;
-    }
-    .popup_text {
-        height: 100%;
-    }
-    .swiper2 {
-        width: 280px;
-        height: 370px;
-    }
-    .popup2_content {
-        padding: 10px;
-        border-radius: 10px;
-        max-height: 450px;
-        justify-content: center;
-    }
-    .popup_cards {
-        justify-content: center;
-    }
-}
-
-@media (min-width:768px) and (max-width: 1024px) {
-    .swiper2 {
-        width: 273px;
-        height: 350px;
-    }
-}
-
-@media (min-width:1024px) and (max-width: 1440px) {
-    .swiper2 {
-        width: 320px;
-        height: 400px;
-    }
-    .popup2_content {
-        width: 850px;
-        height: 500px;
-    }
-    .popup_card {
-        height: 320px;
-    }
-    .popup_content {
-        padding: 20px 20px 20px 40px;
-        width: max-content;
-    }
-}
-
-@media (min-width:1440px) {
-    .popup_content {
-        flex-flow: row nowrap;
-        height: 677px;
-    }
-    .swiper2 {
-        width: 513px;
-        height: 603px;
-    }
-    .popup2_content {
-        width: 1059px;
-        height: 699px;
-    }
-    .popup_card {
-        height: 460px;
-        width: 318px;
-    }
-    .image video {
-        width: 513px;
-        height: 603px;
-        padding: 96px 0;
-    }
-}
-
-@media (max-width: 780px) {
-    .desktop-menu {
-        display: none;
-    }
-}
-
-@media (min-width: 780px) {
-    .hamburger-menu {
-        display: none;
-    }
-    .popup_content {
-        flex-direction: inherit;
-    }
-} */
-
-/* BURGER menu */
 
 #menu__toggle {
   opacity: 0;
@@ -1973,7 +1797,7 @@ conic--small{
     padding: 0;
   }
   .conic:hover::after {
-    width: calc(100% - 1px);
+    width: calc(99% - 1px);
     height: calc(100% - 1px);
     border-radius: 1px;
   }
