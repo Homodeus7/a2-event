@@ -1,5 +1,8 @@
 const swiper = new Swiper(".swiper", {
   // configure Swiper to use modules
+  mousewheel: {
+    forceToAxis: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -76,6 +79,9 @@ const swiper = new Swiper(".swiper", {
 });
 
 const swiper2 = new Swiper(".swiper2", {
+  mousewheel: {
+    forceToAxis: true,
+  },
   speed: 1500,
   autoplay: {
     delay: 1000,
