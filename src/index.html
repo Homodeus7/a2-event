@@ -170,7 +170,7 @@
             onclick="openPopup('portfolio_popup1')"
           >
             <p class="portfolio__title">
-              Клаб-шоу Scally Milano and 163ONMYNECK
+              Клаб-шоу Scally Milano &amp 163ONMYNECK
             </p>
             <img
               class="portfolio__img"
@@ -259,7 +259,7 @@
             onclick="openPopup('portfolio_popup1')"
           >
             <p class="portfolio__title">
-              Клаб-шоу Scally Milano and 163ONMYNECK
+              Клаб-шоу Scally Milano &amp 163ONMYNECK
             </p>
             <img
               class="portfolio__img"
@@ -603,9 +603,8 @@
           />
           <div class="text">
             <div class="popup_title">
-              Клаб-шоу Scally Milano and 163ONMYNECK
+              Клаб-шоу Scally Milano &amp 163ONMYNECK
             </div>
-            <hr />
             <div class="popup_text">
               SCALLY MILANO - одно из самых главных открытий 2021 года. Даня
               является по-настоящему самобытным исполнителем. 22 января 2022
@@ -656,7 +655,6 @@
           />
           <div class="text">
             <div class="popup_title">Закрытая вечеринка для Native Bar</div>
-            <hr />
             <div class="popup_text">
               Закрытая black&white вечеринка от A2 event для Native Bar на
               цветном бульваре.
@@ -706,7 +704,6 @@
           />
           <div class="text">
             <div class="popup_title">Концерт LOVV66</div>
-            <hr />
             <div class="popup_text">
               LOVV66 — автор хитов «Я знаю», «50к в сумке у папы», «Трап трап» и
               многих других на самой масштабной вечеринке весны 2022. Мы выходим
@@ -758,7 +755,6 @@
           />
           <div class="text">
             <div class="popup_title">Open air фестиваль GONE.Fludd</div>
-            <hr />
             <div class="popup_text">
               28 мая в рамках URBAN FEST совместно с Финансовым университетом
               при Правительстве Российской Федерации на территории дизайн-завода
@@ -814,7 +810,6 @@
           />
           <div class="text">
             <div class="popup_title">Концерт SODA LUV</div>
-            <hr />
             <div class="popup_text">
               SODA LUV - российский хип-хоп исполнитель, который не раз покорял
               чарты своими фитами, с такими исполнителями, как: Егор Крид,
@@ -867,7 +862,6 @@
           />
           <div class="text">
             <div class="popup_title">Концерт Егор Натс</div>
-            <hr />
             <div class="popup_text">
               25 сентября команда провела эксклюзивное выступление ЕГОРА НАТСА,
               представив публике треки из его нового альбома. На вечеринке также
@@ -898,7 +892,6 @@
           />
           <div class="text">
             <div class="popup_title">Закрытая вечеринка в ангаре Vnukovo-3</div>
-            <hr />
             <div class="popup_text">
               Vnukovo-3 является крупнейшим центром бизнес-авиации в Европе.
               Именно там была со-организована закрытая блогерская вечеринка в
@@ -925,25 +918,23 @@
 
     <div id="popup_b2b" class="popup hidden" onclick="closePopup()">
       <div class="popup_body">
-        <div class="popup2_content">
-          <div class="popup_title">B2B (для компаний)</div>
+        <div class="popup_content popup_content-services">
+          <div class="popup_title popup_title-services">B2B (для компаний)</div>
           <div class="popup_cards">
             <div class="popup_card">
-              <img src="assets/images/b2b/1.jpg" alt="" />
+              <img class="popup_services-img" src="assets/images/b2b/1.jpg" alt="services image" />
               <div class="card_text_container">
                 <div class="card_title">Торговые мероприятия</div>
-                <hr />
-                <p class="card_text" style="margin-top: 47px">
+                <p class="card_text">
                   — это события, которые создают для клиентов и партнеров
                   (конференции, семинары, слеты).
                 </p>
               </div>
             </div>
             <div class="popup_card">
-              <img src="assets/images/b2b/2.jpg" alt="" />
+              <img class="popup_services-img" src="assets/images/b2b/2.jpg" alt="services image" />
               <div class="card_text_container">
                 <div class="card_title">Корпоративные мероприятия</div>
-                <hr />
                 <p class="card_text">
                   — мероприятия для сотрудников, проводятся в виде тимбилдингов,
                   юбилеев компании и празднования других важных дат.
@@ -951,10 +942,9 @@
               </div>
             </div>
             <div class="popup_card">
-              <img src="assets/images/b2b/3.jpg" alt="" />
+              <img class="popup_services-img" src="assets/images/b2b/3.jpg" alt="services image" />
               <div class="card_text_container">
                 <div class="card_title">Специальные мероприятия</div>
-                <hr />
                 <p class="card_text">
                   — события для клиентов (концерты, презентации, фестивали,
                   благотворительные акции, рекламные туры).
@@ -962,8 +952,74 @@
               </div>
             </div>
           </div>
+          <button 
+          class="popup_btn popup_btn--services"
+            onclick="closePopup(); scrollToSection('.section6')"
+          >
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="popup_b2c" class="popup hidden" onclick="closePopup()">
+      <div class="popup_body">
+        <div class="popup_content  popup_content-services">
+          <div class="popup_title popup_title-services">B2C (для частных лиц)</div>
+          <div class="popup_cards">
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2c/1.jpg" alt="v" />
+              <div class="card_text_container">
+                <div class="card_title">Свадьбы</div>
+              </div>
+            </div>
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2c/2.jpg" alt="services image" />
+              <div class="card_text_container">
+                <div class="card_title">Дни рождения</div>
+              </div>
+            </div>
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2c/3.jpg" alt="services image" />
+              <div class="card_text_container">
+                <div class="card_title">Детские праздники</div>
+              </div>
+            </div>
+          </div>
           <button
-            class="b2b"
+            class="popup_btn popup_btn--services"
+            onclick="closePopup(); scrollToSection('.section6')"
+          >
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="popup_b2c2" class="popup hidden" onclick="closePopup()">
+      <div class="popup_body">
+        <div class="popup_content  popup_content-services">
+          <div class="popup_title popup_title-services">B2G (для гос учреждений)</div>
+          <div class="popup_cards">
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2g/1.jpg" alt="services image" />
+              <div class="card_text_container">
+                <div class="card_title">Выпускные</div>
+              </div>
+            </div>
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2g/2.jpg" alt="services image" />
+              <div class="card_text_container">
+                <div class="card_title">Городские праздники</div>
+              </div>
+            </div>
+            <div class="popup_card">
+              <img class="popup_services-img" src="assets/images/b2g/3.jpg" alt="services image" />
+              <div class="card_text_container">
+                <div class="card_title">Фестивали</div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="popup_btn popup_btn--services"
             onclick="closePopup(); scrollToSection('.section6')"
           >
             Оставить заявку
@@ -974,7 +1030,7 @@
 
     <div id="popup_b2b-mobile" class="popup hidden" onclick="closePopup()">
       <div class="popup_body popup_body-popup2">
-        <div class="popup_content popup_content-popup2">
+        <div class="popup_content  popup_content-services popup_content-popup2">
           <img
             class="popup_popup-close popup__exit"
             src="assets/images/popup-exit.svg"
@@ -1047,44 +1103,6 @@
         </div>
       </div>
     </div>
-
-    <div id="popup_b2c" class="popup hidden" onclick="closePopup()">
-      <div class="popup_body">
-        <div class="popup2_content">
-          <div class="popup_title">B2C (для частных лиц)</div>
-          <div class="popup_cards">
-            <div class="popup_card">
-              <img src="assets/images/b2c/1.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Свадьбы</div>
-                <hr />
-              </div>
-            </div>
-            <div class="popup_card">
-              <img src="assets/images/b2c/2.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Дни рождения</div>
-                <hr />
-              </div>
-            </div>
-            <div class="popup_card">
-              <img src="assets/images/b2c/3.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Детские праздники</div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <button
-            class="b2b"
-            onclick="closePopup(); scrollToSection('.section6')"
-          >
-            Оставить заявку
-          </button>
-        </div>
-      </div>
-    </div>
-
     <div id="popup_b2c-mobile" class="popup hidden" onclick="closePopup()">
       <div class="popup_body popup_body-popup2">
         <div class="popup_content popup_content-popup2">
@@ -1127,43 +1145,6 @@
             </div>
             <div class="swiper-pagination swiper-pagination-bottom"></div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="popup_b2c2" class="popup hidden" onclick="closePopup()">
-      <div class="popup_body">
-        <div class="popup2_content">
-          <div class="popup_title">B2G (для гос учреждений)</div>
-          <div class="popup_cards">
-            <div class="popup_card">
-              <img src="assets/images/b2g/1.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Выпускные</div>
-                <hr />
-              </div>
-            </div>
-            <div class="popup_card">
-              <img src="assets/images/b2g/2.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Городские праздники</div>
-                <hr />
-              </div>
-            </div>
-            <div class="popup_card">
-              <img src="assets/images/b2g/3.jpg" alt="" />
-              <div class="card_text_container">
-                <div class="card_title">Фестивали</div>
-                <hr />
-              </div>
-            </div>
-          </div>
-          <button
-            class="b2b"
-            onclick="closePopup(); scrollToSection('.section6')"
-          >
-            Оставить заявку
-          </button>
         </div>
       </div>
     </div>
