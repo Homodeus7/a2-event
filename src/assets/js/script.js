@@ -12,12 +12,21 @@ function scrollToSection(selector) {
   window.scrollTo({ top: y, behavior: "smooth" });
 }
 
-const inputFile = document.querySelector('input[type="file"]');
 const fileName = document.querySelector(".file_name");
+const inputFile = document.querySelector('input[type="file"]');
+const textarea = document.querySelector("textarea");
+const inputText = document.querySelector('input[type="text"]');
+const inputEmail = document.querySelector('input[type="email"]');
+const inputTel = document.querySelector('input[type="tel"]');
 
 function clearForm() {
   fileName.innerText = "";
   inputFile.value = "";
+  textarea.value = "";
+  inputText.value = "";
+  inputText.value = "";
+  inputEmail.value = "";
+  inputTel.value = "";
 }
 
 function hideMenu() {

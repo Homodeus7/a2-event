@@ -923,6 +923,9 @@ header {
   color: #c8c8c8;
 }
 
+input:invalid:not(:placeholder-shown) {border-color: rgb(104, 36, 36);}
+input:valid:not(:placeholder-shown) {border-color: rgb(0, 65, 0);}
+
 .seti {
   margin: 1% 0;
   width: 100%;
