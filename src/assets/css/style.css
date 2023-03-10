@@ -457,7 +457,7 @@ header {
 @media (max-width: 1024px) {
   .partners__img {
     padding: 10px 10px;
-    max-width: 100px;
+    max-width: 180px;
   }
 }
 
@@ -1170,6 +1170,7 @@ input:valid:not(:placeholder-shown) {border-color: rgb(0, 65, 0);}
 }
 
 .popup_swiper-wrapper video{
+  padding-top: 220px;
   max-width: 513px;
 }
 
@@ -1805,11 +1806,11 @@ conic--small{
 
 @media (max-width: 490px) {
   .conic {
-    padding: 0;
+    padding: 1px;
     margin-bottom: 10px;
   }
   .conic:hover::before{
-    content: none;
+    
   }
 }
 
