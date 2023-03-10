@@ -763,9 +763,10 @@ header {
 @media (max-width: 490px) {
   .main-form_item{
     min-height: 30px;
-    max-width: 120px;
+    max-width: 125px;
     background-color: #060606;
     padding: 0 10px;
+    font-size: 11px;
   }
 }
 
@@ -784,6 +785,7 @@ header {
     background-color: #060606;
     padding: 0 10px;
     min-height: 30px;
+    font-size: 11px;
   }
 }
 .main-form_area {
@@ -805,6 +807,7 @@ header {
     background-color: #060606;
     padding: 10px 10px;
     min-height: 92px;
+    font-size: 11px;
   }
 }
 .main-form_item-name::placeholder,
@@ -860,6 +863,11 @@ header {
 	display: flex;
   align-items: center;
   margin-bottom: 22px;
+}
+@media (max-width: 490px) {
+  .input-file {
+    margin-bottom: 10px;
+  }
 }
 
 .input-file-btn {
@@ -1788,32 +1796,18 @@ conic--small{
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: conic-gradient(transparent, rgb(238, 237, 237), transparent 30%);
-  -webkit-animation: rotate 5s linear infinite;
-  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
 }
-.conic:hover::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 2px;
-  top: 2px;
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
-  background: #000;
-  border-radius: 2px;
-}
+
 @media (max-width: 490px) {
   .conic {
     padding: 0;
+    margin-bottom: 10px;
   }
   .conic:hover::before{
     content: none;
   }
-  .conic:focus::after,
-  .conic:active::after,
-  .conic:hover::after {
-    content: none;
-}
 }
 
 @-webkit-keyframes opacityChange {
@@ -1833,3 +1827,37 @@ conic--small{
     opacity: 1;
   }
 }
+
+/* .popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+  transition: 0.5s all;
+}
+
+.popup__bg.active { // При добавлении класса 'active'
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+
+.popup .active { // При добавлении класса 'active'
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.5s all;
+} */
