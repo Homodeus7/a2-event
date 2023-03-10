@@ -1435,8 +1435,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px;
   align-items: center;
+  padding: 0 110px;
 }
 
 #menu__toggle {
@@ -1480,7 +1480,7 @@ header {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .hamburger-menu {
     display: none;
   }
