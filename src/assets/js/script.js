@@ -2,7 +2,7 @@ function scrollToSection(selector) {
   console.log(window.screen.width);
   let yOffset;
   if (window.screen.width < 780) {
-    yOffset = -39;
+    yOffset = -30;
   } else {
     yOffset = -58.5;
   }
@@ -64,6 +64,11 @@ const exit = Array.from(document.querySelectorAll(".popup__exit")).forEach(
     element.addEventListener("click", clickExit);
   }
 );
+const closeCardsPopup = Array.from(
+  document.querySelectorAll(".popup_card")
+).forEach((element) => {
+  element.addEventListener("click", clickExit);
+});
 
 let inputs = document.querySelectorAll(".input__file");
 Array.prototype.forEach.call(inputs, function (input) {

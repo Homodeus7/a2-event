@@ -95,6 +95,7 @@ header {
 }
 
 .preview-img {
+  min-width: 340px;
   transition-duration: 800ms;
 }
 
@@ -116,6 +117,7 @@ header {
   min-width: 280px;
   color: #fff;
   line-height: 20px;
+  margin-top: -100px;
 }
 
 @media (max-width: 1024px) {
@@ -1126,7 +1128,7 @@ header {
   margin-top: 40px;
   width: 238px;
   height: 59px;
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: #ebebeb;
   border: none;
   cursor: pointer;
@@ -1146,6 +1148,7 @@ header {
   min-width: 0;
   max-width: 513px;
   overflow: hidden;
+  position: relative;
 }
 
 .popup_swiper-wrapper{
@@ -1226,14 +1229,17 @@ header {
 }
 
 .swiper2 .swiper-pagination {
-  bottom: 120px !important;
-  left: 230px !important;
+  bottom: 10px !important;
+  z-index: 990;
 }
 
 @media (max-width: 490px) {
+  .swiper2 {
+    position: static;
+  }
   .swiper2 .swiper-pagination {
     bottom: 250px !important;
-    left: 0 !important;
+    left: 0px !important;
   }
 }
 
@@ -1289,6 +1295,7 @@ header {
 
 .popup_card{
   position: relative;
+  cursor: pointer;
   z-index: 1;
   transition: transform 0.2s;
   transition-duration: 200ms;
@@ -1520,7 +1527,9 @@ header {
 }
 
 .menu__list-desk {
+  min-width: 550px;
   display: flex;
+  justify-content: space-between;
   color: #797979;
 }
 .menu__desc-item {
@@ -1528,7 +1537,6 @@ header {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  margin-right: 71px;
   padding: 0 10px;
   padding-bottom: 7px;
   cursor: pointer;
@@ -1777,8 +1785,8 @@ conic--small{
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: conic-gradient(transparent, rgb(238, 237, 237), transparent 30%);
-  -webkit-animation: rotate 6s linear infinite;
-  animation: rotate 6s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 .conic:hover::after {
   content: "";
@@ -1791,16 +1799,18 @@ conic--small{
   background: #000;
   border-radius: 2px;
 }
-
 @media (max-width: 490px) {
   .conic {
     padding: 0;
   }
-  .conic:hover::after {
-    width: calc(99% - 1px);
-    height: calc(100% - 1px);
-    border-radius: 1px;
+  .conic:hover::before{
+    content: none;
   }
+  .conic:focus::after,
+  .conic:active::after,
+  .conic:hover::after {
+    content: none;
+}
 }
 
 @-webkit-keyframes opacityChange {
