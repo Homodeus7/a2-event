@@ -1032,6 +1032,9 @@ input:valid:not(:placeholder-shown) {border-color: rgb(0, 65, 0);}
     font-size: 12px;
   }
 }
+.mail a:hover{
+  color: #F4F4F4;
+}
 
 .footer {
   background: #131313;
