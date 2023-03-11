@@ -84,7 +84,7 @@ input.addEventListener("keypress", (evt) => {
 });
 input.addEventListener("focus", () => {
   if (input.value.length === 0) {
-    input.value = "+7\u00A0";
+    input.value = "+7";
     input.selectionStart = input.value.length;
   }
 });
@@ -95,10 +95,10 @@ input.onkeydown = function () {
     old--;
     return;
   }
-  if (curLen == 3) input.value = input.value + "(";
-  if (curLen == 7) input.value = input.value + ")\u00A0";
-  if (curLen == 12) input.value = input.value + "-";
-  if (curLen == 15) input.value = input.value + "-";
+  if (curLen == 2) input.value = input.value + "\u00A0(";
+  if (curLen == 6) input.value = input.value + ")\u00A0";
+  if (curLen == 11) input.value = input.value + "-";
+  if (curLen == 14) input.value = input.value + "-";
   old++;
 };
 input.addEventListener("click", (evt) => {
